@@ -1,0 +1,9 @@
+label main
+lim p0, 1
+lim r1, 2
+bsri r1, r1, 1
+addi p1, r0, 0
+exec
+bsli r1, r1, 1
+mov r1, p1
+exec

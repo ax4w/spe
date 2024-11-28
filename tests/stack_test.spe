@@ -1,0 +1,14 @@
+fun main
+lim p0, 1
+lim r1, 10
+lim r2, 20
+addi sp, sp, -2
+sws 0, r1
+sws 1, r2
+lws 0, r3
+mov r3, p1
+exec
+addi sp, sp, 1
+lws 0, r3
+mov r3, p1
+exec

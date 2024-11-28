@@ -1,0 +1,11 @@
+fun main
+lim R2, 5
+LABEL proc
+addi R1, R1, 1
+addi R3, R3, 10
+jeq R2, R1, exit
+jmp proc
+LABEL exit
+lim p0, 1
+mov r3, p1
+exec

@@ -1,0 +1,6 @@
+.global exp 0x0
+fun main
+lim p0, 1
+lim p1, 1
+bsli p1, p1, .exp
+exec

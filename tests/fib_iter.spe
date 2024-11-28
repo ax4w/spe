@@ -1,0 +1,21 @@
+.GLOBAL target 12
+.GLOBAL zero 0x0
+.GLOBAL one 0x1
+
+fun main
+lim R1, .zero
+lim R2, .one
+lim R7, .target
+
+fun loop
+jei R7, .one, end
+add R3, R1, R2
+addi R1, R2, .zero
+addi R2, R3, .zero
+subi R7, R7, .one
+call loop
+
+LABEL end
+lim p0, .one
+mov r2, p1
+exec

@@ -1,0 +1,23 @@
+fun main
+lim R1, 0
+lim p0, 10
+call work
+jmp exit
+
+
+fun work
+jei p0, 1, base
+subi p0, p0, 1
+push rt
+call work
+pop rt
+addi r1, r1, 1
+ret
+LABEL base
+addi R1, R1, 1
+ret
+
+LABEL exit
+lim p0, 1
+mov r1, p1
+exec

@@ -1,0 +1,9 @@
+LABEL main
+itfi f0, 1
+itfi f1, 2
+fdiv f0, f0, f1
+lim p0, 1
+fmov fp0, f0
+fexec
+fti p1, f0
+exec
