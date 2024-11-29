@@ -4,9 +4,9 @@
 This processor emulator is desinged to do basic maths (`add`, `sub`, `mul`), bitwise functions (`and`, `or`, `xor`, `bsl`, `bsr`), branching (f.e `jump`, `jumpr`,...) and stack storage to write basic iterative or recursive calulcations (such as `fibonacci`). `Macros` get extended to the regular expressions to that **1 instruction = 1 cylce** (or per cycle one line of code)
 
 ## ToDo
-[] add float support
-[] add more functions
-[] actually assembly it to binary
+- [ ] add float support
+- [ ] add more functions
+- [ ] actually assembly it to binary
 
 ## Instructions
 - `lim` (load immediate): `lim reg value`
