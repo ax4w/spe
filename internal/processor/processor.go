@@ -30,8 +30,8 @@ const (
 
 // word size is 32bit
 type Processor struct {
-	Registers            [14]int32
-	FlRegisters          [6]float32
+	Registers [14]int32
+	//FlRegisters          [6]float32
 	translateIntRegister map[string]int32
 	memory               *memory.Memory
 }

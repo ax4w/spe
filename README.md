@@ -1,4 +1,4 @@
-# Simple Processor Emulator
+# Small Processor Emulator
 `SPE` is a simple 12x 32Bit Register Stack-Only Processor Emulator to play with a very small and simple instruction set to get familiar with assembly and how to manage memory by maintaining the stack.
 
 This processor emulator is desinged to do basic maths (`add`, `sub`, `mul`), bitwise functions (`and`, `or`, `xor`, `bsl`, `bsr`), branching (f.e `jump`, `jumpr`,...) and stack storage to write basic iterative or recursive calulcations (such as `fibonacci`). `Macros` get extended to the regular expressions to that **1 instruction = 1 cylce** (or per cycle one line of code)
